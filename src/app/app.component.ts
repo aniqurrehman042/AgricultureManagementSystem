@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AgriculturalManagementSystem';
+  public opened = false;
+
+  public toggleSidebar(): void {
+    this.opened = !this.opened;
+  }
 }

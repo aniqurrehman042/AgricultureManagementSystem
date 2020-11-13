@@ -1,0 +1,16 @@
+<nav>
+    <fa-icon id="menu-toggle" (click)="menuOpen=true" class="menu-icon" icon="bars"></fa-icon>
+    <h1 id="app-title">Agriculture Management System</h1>
+    <fa-icon id="hidden-menu-icon" class="menu-icon" icon="bars"></fa-icon>
+    <div class="menu" [ngClass]="{'overlay-hidden': !menuOpen}">
+        <div [ngClass]="{'menu-closed': !menuOpen}" class="menu-content">
+            <ul>
+                <li><fa-icon id="menu-close" (click)="menuOpen=false" icon="times"></fa-icon></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="./add-activities">Add Activities</a></li>
+            </ul>
+        </div>
+        <div [ngClass]="{'overlay-hidden': !menuOpen}" class="menu-overlay"></div>
+    </div>
+</nav>
+<router-outlet></router-outlet>

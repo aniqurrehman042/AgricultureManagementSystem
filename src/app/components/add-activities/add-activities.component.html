@@ -1,0 +1,15 @@
+<main>
+    <div id="main-card" class="rounded-raised-card">
+        <form [formGroup]="addActivitiesForm" (ngSubmit)="onSubmit()">
+            <label for="acreNos">Date</label><br/>
+            <input class="form-control" type="date"><br/>
+            <label for="acreNos">Acre No</label><br/>
+            <select id="acreNos" class="form-control" formControlName="acreNos">
+                <option *ngFor="let acreNo of acreNos">
+                    {{acreNo}}
+                </option>
+            </select><br/>
+            <button id="btn-submit" class="btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+</main>

@@ -1,0 +1,19 @@
+label {
+    margin-bottom: .5em;
+    font-weight: 700;
+    color: var(--default-primary-color);
+    display: inline-block;
+}
+
+#main-card {
+    padding: 2em;
+    margin: 2em 4em;
+}
+
+#btn-submit {
+    padding: .5em 2em;
+}
+
+.form-control {
+    margin-bottom: 1em;
+}
